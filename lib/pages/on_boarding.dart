@@ -1,5 +1,6 @@
 import 'package:first_app/colors.dart';
 import 'package:first_app/pages/register.dart';
+import 'package:first_app/widgets/app_logo.dart';
 import 'package:flutter/material.dart';
 
 class OnBoarding extends StatelessWidget {
@@ -13,7 +14,7 @@ class OnBoarding extends StatelessWidget {
         child: Column(
           children: [
             Spacer(),
-            Image.asset("assets/images/logo.png"),
+            AppLogo(width: 200),
             Spacer(),
             Row(
               children: [
@@ -25,6 +26,7 @@ class OnBoarding extends StatelessWidget {
                         context,
                         MaterialPageRoute(builder: (context) => RegisterPage()),
                       );
+                      // Navigator.pushNamed(context, '/register');
                     },
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(vertical: 20),

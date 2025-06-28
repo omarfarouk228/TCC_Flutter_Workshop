@@ -1,4 +1,4 @@
-import 'package:first_app/pages/on_boarding.dart';
+import 'package:first_app/pages/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
       debugShowCheckedModeBanner: false,
-      home: OnBoarding(),
+      home: SplashPage(),
     );
   }
 }
